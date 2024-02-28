@@ -13,8 +13,50 @@
 </head>
 
 <body class="font-poppins">
-    <header></header>
-    <main></main>
+    <header>
+        <h1 class="text-center text-5xl">Hot Gadgets</h1>
+    </header>
+    <main class="container mx-auto py-6 space-y-10">
+        <!-- search your phone section -->
+        <section class="space-y-6">
+            <h2 class="text-4xl text-[#100F0F] font-semibold text-center">Search your phone</h2>
+            <div>
+                <label class="input input-bordered flex items-center gap-2 pr-0">
+                    <div class="grow flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
+                            class="w-4 h-4 opacity-70">
+                            <path fill-rule="evenodd"
+                                d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <input type="text" class="" placeholder="Search" />
+                    </div>
+                    <button class="btn btn-primary">Search</button>
+                </label>
+            </div>
+        </section>
+        <!-- show all phones section -->
+        <section>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <div id="phone-container" class="card w-96 border-2 border-gray-200 rounded-lg">
+                    <div class="px-8 pt-8">
+                        <figure class="bg-[#0D6EFD0D] p-6 rounded-lg">
+                            <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                                alt="phones" class="rounded-xl" />
+                        </figure>
+                    </div>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-2xl text-gray-800">Iphone 13 Pro Max</h2>
+                        <p class="text-gray-500">If a dog chews shoes whose shoes does he choose?</p>
+                        <h4 class="text-2xl font-semibold text-gray-700">$999</h4>
+                        <div class="card-actions">
+                            <button class="btn btn-primary text-xl font-semibold rounded-lg">Show Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer></footer>
 </body>
 
