@@ -12,8 +12,13 @@ const handleAllPhone = (phones, isShowAll) => {
     const phoneContainer = document.getElementById('phone-container');
     phoneContainer.textContent = '';
 
-    if(!isShowAll){
+    const showAllContainer = document.getElementById('show-all-container');
+    if (!isShowAll && phones.length > 12) {
+        showAllContainer.classList.remove('hidden');
         phones = phones.slice(0, 12);
+    }
+    else {
+        showAllContainer.classList.add('hidden');
     }
     phones.forEach(phone => {
         const phoneCard = document.createElement('div');
@@ -38,12 +43,23 @@ const handleAllPhone = (phones, isShowAll) => {
         phoneContainer.appendChild(phoneCard);
         console.log(phone);
     });
+    handleLoadingBar(false);
+};
+
+// handle loading bar
+const handleLoadingBar = (isLoading) => {
+    const loadingContainer = document.getElementById('loading-container');
+    if (isLoading) {
+        loadingContainer.classList.remove('hidden');
+    }
+    else {
+        loadingContainer.classList.add('hidden');
+    }
 };
 
 // handle show all
-const handleShowAll = () =>{
-
-    handleSearchPhone(true)
+const handleShowAll = () => {
+    handleSearchPhone(true);
 };
 
 // handle search phone
@@ -52,5 +68,6 @@ const handleSearchPhone = (isShowAll) => {
     const searchText = searchPhone.value;
     console.log(searchText);
     loadPhones(searchText, isShowAll);
+    handleLoadingBar(true);
 };
 loadPhones();
