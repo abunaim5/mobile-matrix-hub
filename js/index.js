@@ -42,6 +42,13 @@ const handleAllPhone = (phones, isShowAll) => {
         phoneContainer.appendChild(phoneCard);
     });
     handleLoadingBar(false);
+    const notFound = document.getElementById('not-found');
+    if (phones.length === 0) {
+        notFound.classList.remove('hidden');
+    }
+    else {
+        notFound.classList.add('hidden');
+    }
 };
 
 // load phone details
@@ -103,7 +110,7 @@ const handleSearchPhone = (isShowAll) => {
     const searchPhone = document.getElementById('search-phone');
     const searchText = searchPhone.value;
     // console.log(searchText);
-    loadPhones(searchText, isShowAll);
+    loadPhones(searchText ? searchText : 'iphone', isShowAll);
     handleLoadingBar(true);
 };
 loadPhones();
