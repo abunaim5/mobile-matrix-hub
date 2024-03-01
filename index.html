@@ -12,11 +12,28 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
-<body class="font-poppins px-6">
-    <header>
-        <h1 class="text-center text-5xl">Hot Gadgets</h1>
+<body class="font-poppins">
+    <header class="bg-[#0D6EFD0D] space-y-10 px-2 pb-32 md:pb-52 lg:pb-72 xl:pb-80 2xl:pb-96 pt-10">
+        <nav class="container mx-auto flex items-center justify-between">
+            <h2 class="text-2xl text-[#403F3F] font-bold">Hot Gadgets</h2>
+            <button class="btn btn-primary text-xl font-semibold text-white bg-[#0D6EFD] border-none min-w-28">Sign
+                Up</button>
+        </nav>
+        <!-- banner section -->
+        <section class="container mx-auto text-center space-y-10 relative">
+            <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold">Apple Iphone 13 Pro Max</h1>
+            <p class="max-w-[95%] md:max-w-[80%] lg:max-w-[60%] mx-auto">The iPhone 13 Pro Max display has rounded
+                corners that follow a beautiful curved design, and these corners are within a standard rectangle. When
+                measured as a standard rectangular shape, the screen is 6.68 inches diagonally (actual viewable area is
+                less).</p>
+            <button class="btn btn-primary text-xl font-semibold text-white bg-[#0D6EFD] border-none min-w-28">Buy
+                Now</button>
+            <div class="absolute top-[100%] left-[50%] transform translate-x-[-50%] translate-y-[5%]">
+                <img src="images/iphone.png" alt="">
+            </div>
+        </section>
     </header>
-    <main class="container mx-auto py-6 space-y-10">
+    <main class="container mx-auto p-2 space-y-10 mt-24 md:mt-44 xl:mt-64">
         <!-- search your phone section -->
         <section class="space-y-6">
             <h2 class="text-4xl text-[#100F0F] font-semibold text-center">Search your phone</h2>
@@ -54,13 +71,60 @@
             </div>
         </section>
         <!-- show modal section -->
-        <section>
+        <section class="">
             <!-- Open the modal using ID.showModal() method -->
-            <dialog id="show_modal" class="modal modal-bottom sm:modal-middle">
+            <dialog id="show_modal" class="modal modal-bottom sm:modal-middle p-2">
             </dialog>
         </section>
     </main>
-    <footer></footer>
+    <footer class="bg-[#0D6EFD0D] py-10">
+        <section class="container mx-auto footer py-4 border-b text-base-content border-base-300">
+            <aside class="">
+                <h3 class="text-2xl text-[#403F3F] font-bold">Hot Gadgets</h3>
+                <p>You can definitely work.</p>
+            </aside>
+            <nav class="md:place-self-center md:justify-self-end">
+                <div class="grid grid-flow-col items-center gap-4">
+                    <a><img src="images/Facebook.png" alt=""></a>
+                    <a><img src="images/Twitter.png" alt=""></a>
+                    <a><img src="images/Instagram.png" alt=""></a>
+                    <button
+                        class="btn btn-primary text-xl font-semibold text-white bg-[#0D6EFD] border-none min-w-28">Join
+                        Premium</button>
+                </div>
+            </nav>
+        </section>
+        <section class="container mx-auto footer text-base-content pt-8">
+            <nav>
+                <h6 class="footer-title">Product</h6>
+                <a class="link link-hover">Browse jobs</a>
+                <a class="link link-hover">Remote jobs</a>
+                <a class="link link-hover">Startup jobs</a>
+                <a class="link link-hover">Company jobs</a>
+            </nav>
+            <nav>
+                <h6 class="footer-title">Popular</h6>
+                <a class="link link-hover">UI/UX Design</a>
+                <a class="link link-hover">Product Design</a>
+                <a class="link link-hover">Back-End Developer</a>
+                <a class="link link-hover">Front-End Developer</a>
+            </nav>
+            <nav>
+                <h6 class="footer-title">Resource</h6>
+                <a class="link link-hover">FAQ</a>
+                <a class="link link-hover">Support</a>
+                <a class="link link-hover">Privacy Policy</a>
+                <a class="link link-hover">Terms of Service</a>
+            </nav>
+            <nav>
+                <h6 class="footer-title">Company</h6>
+                <a class="link link-hover">About Us</a>
+                <a class="link link-hover">Contact Us</a>
+                <a class="link link-hover">Career Tips</a>
+                <a class="link link-hover">Careers</a>
+            </nav>
+        </section>
+    </footer>
     <script src="js/index.js"></script>
 </body>
 
