@@ -35,7 +35,7 @@ const handleAllPhone = (phones, isShowAll) => {
                 <p class="text-gray-600">If a dog chews shoes whose shoes does he choose?</p>
                 <h4 class="text-2xl font-semibold text-[#100F0F]">$999</h4>
             <div class="card-actions">
-                <button onclick="" class="btn btn-primary text-xl text-white font-semibold rounded-lg min-w-48 border-none bg-[#0D6EFD]">Show Details</button>
+                <button onclick="show_modal.showModal()" class="btn btn-primary text-xl text-white font-semibold rounded-lg min-w-48 border-none bg-[#0D6EFD]">Show Details</button>
             </div>
         </div>
         `;

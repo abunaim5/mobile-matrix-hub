@@ -53,6 +53,33 @@
                     All</button>
             </div>
         </section>
+        <!-- show modal section -->
+        <section>
+            <!-- Open the modal using ID.showModal() method -->
+            <dialog id="show_modal" class="modal modal-bottom sm:modal-middle">
+                <div class="modal-box space-y-3 rounded-lg">
+                    <div>
+                        <img src="" alt="">
+                    </div>
+                    <h3 class="font-bold text-3xl">Hello!</h3>
+                    <p class="">Press ESC key or click the button below to close</p>
+                    <p class="text-xl font-semibold text-[#403F3F]">Storage: <span class="text-[#706F6F]"></span></p>
+                    <p class="text-xl font-semibold text-[#403F3F]">Display Size: <span class="text-[#706F6F]"></span></p>
+                    <p class="text-xl font-semibold text-[#403F3F]">Chipset: <span class="text-[#706F6F]"></span></p>
+                    <p class="text-xl font-semibold text-[#403F3F]">Memory: <span class="text-[#706F6F]"></span></p>
+                    <p class="text-xl font-semibold text-[#403F3F]">Slug: <span class="text-[#706F6F]"></span></p>
+                    <p class="text-xl font-semibold text-[#403F3F]">Release Date: <span class="text-[#706F6F]"></span></p>
+                    <p class="text-xl font-semibold text-[#403F3F]">Brand: <span class="text-[#706F6F]"></span></p>
+                    <p class="text-xl font-semibold text-[#403F3F]">GPS: <span class="text-[#706F6F]"></span></p>
+                    <div class="modal-action">
+                        <form method="dialog">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button class="btn text-white text-xl font-semibold bg-[#DC3545]">Close</button>
+                        </form>
+                    </div>
+                </div>
+            </dialog>
+        </section>
     </main>
     <footer></footer>
     <script src="js/index.js"></script>
